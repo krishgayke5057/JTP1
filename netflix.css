@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Anek+Malayalam:wght@100;200;700&family=Gemunu+Libre&family=Great+Vibes&family=Josefin+Sans&family=Lato:ital@1&family=Libre+Baskerville:ital@0;1&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Martian+Mono:wght@800&family=Noto+Serif:ital@1&family=Open+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(netflix_bg.jpg);
+  background-position: center center;
+
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+}
+
+.main .box {
+  height: 100%;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+nav img {
+  color: red;
+  width: 130px;
+  position: relative;
+  z-index: 10;
+  
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.hero span:nth-of-type(1) {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.hero span:nth-of-type(2) {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.hero span:nth-of-type(3) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.seperation {
+  height: 7px;
+  background-color: rgb(95, 95, 95);
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0);
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  height: 38px;
+  color: white;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.btn-red:hover {
+  cursor: pointer;
+}
+
+.main input {
+  padding: 7px 101px 8px 14px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.2);
+  /* color: white; */
+  font-weight: 900;
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  color: white;
+  /* position: relative; */
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  /* border: none; */
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+}
+
+.first h1 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.first p {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+
+  top: 55px;
+  right: 0;
+}
+
+.faq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    
+}
+.faqbox {
+  transition: all 2s ease-out;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.385);
+  padding: 24px;
+  max-width: 70vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+
+.faqbox:hover{
+  background-color: rgba(128, 128, 128, 0.799);
+}
+
+.faqbox span{
+  font-size: 25px;
+}
+
+footer{
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 34px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+ 
+}
+
+
+footer .footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer a{
+
+  font-size: 14px;
+  color: white;
+}
+
+footer .question{
+  padding: 34px 0;
+}
+
+/* copy paste */
+@media screen and (max-width: 1300px) {
+
+  nav{
+      max-width: 90vw;
+  }
+
+  .first {
+      flex-wrap: wrap;
+  }
+
+  .secImg img {
+      width: 305px;
+  }
+
+  .secImg video {
+      width: 305px;
+  }
+
+  .hero> :nth-child(1) {
+      font-size: 32px;
+  }
+
+  .hero> :nth-child(2) {
+      font-size: 18px;
+  }
+
+  .hero> :nth-child(3) {
+      font-size: 18px;
+  }
+
+  .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+  }
+
+  .faq h2 {
+      text-align: center;
+      font-size: 32px;
+  }
+
+  footer {
+      max-width: 90vw;
+      padding: 75px 0;
+  }
+
+  .footer-item{
+      align-items: center;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+  .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+  }
+}
+
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
